@@ -1,0 +1,333 @@
+/* color-teal: #91CCD0  */
+/* color-teal-light: #E3F2F3 */
+/* color-font-dark: #333 */
+
+/* --------------------------------------------- */
+/* BASIC SETUP */
+/* --------------------------------------------- */
+
+*,
+*::after,
+*::before {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /* now every item in the CSS file
+                            will be forced to inherit 
+                            from the body declaration */ }
+
+html,
+body {
+    background-color: #ffffff;
+    color: #111;
+    font-family: "brandon-grotesque", sans-serif;
+    font-size: 62.5%; 
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+}
+
+/* ----- HEADINGS/TEXT ----- */
+h1, 
+h2,
+h3,
+h4 {
+    font-weight: 300;
+    /* text-transform: uppercase; */
+}
+
+h1 {
+  font-size: 5rem;
+  display: inline;
+  line-height: 8.5rem;
+  color: #fff;
+  background-color:#91ccd0e1;
+}
+
+.h1--small {
+  font-size: 3.5rem;
+  line-height: 5.8rem;
+}
+
+h1::before,
+h1::after {
+  content: "";
+  display: inline-block;
+}
+
+.h1-spacing::before,
+.h1-spacing::after {
+  content: "";
+  display: inline-block;
+}
+
+h2 {
+  font-size: 2.5rem;
+  line-height: 4.5rem;
+  font-weight: 400;
+  padding: 2rem 0;
+}
+
+h3 {
+  font-size: 3.8rem;
+  font-weight: 300;
+  color: #222;
+  display: inline-block;
+}
+
+h4 {
+  font-size: 2.3rem;
+  font-weight: 300;
+  color: #222;
+}
+
+.h4--sub {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+.h4--white {
+  color: #fff;
+}
+
+p {
+  font-size: 1.7rem;
+  font-weight: 00;
+  color: rgba(0, 0, 0);
+  display: inline-block;
+}
+
+.p--white {
+  color: #fff;
+  font-weight: 300;
+  font-size: 2rem;
+}
+
+/* --------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* --------------------------------------------- */
+
+section {
+  margin-top: 0.4%;
+}
+
+.row {
+  margin: auto;
+  max-width: 94%;
+}
+
+.row__section-header {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+/* ----- BUTTONS ----- */
+.btn:link,
+.btn:visited {
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: all 0.2s;
+    font-size: 1.9rem;
+    display: inline-block;
+    text-align: center;
+    padding-top: 0.8rem;
+    height: 3.4rem;
+    width: 14.5rem;
+}
+
+.btn--small:link,
+.btn--small:visited {
+    font-weight: 600;
+    transition: all 0.2s;
+    font-size: 1.4rem;
+    padding-top: 0.8rem;
+    height: 2.8rem;
+    width: 12rem;
+}
+
+.btn-full:link,
+.btn-full:visited {
+    background-color: #91ccd0e1;
+    border: solid 2px #ffffff00;
+    color: #fff;
+}
+
+.btn-full:hover,
+.btn-full:active {
+    background-color: #74a3a7; 
+    color: rgb(233, 233, 233);
+    border: solid 2px #ffffff00;
+}
+
+.btn-ghost:link,
+.btn-ghost:visited {
+    border: solid 2px #fdfdfde1;
+    color: #fff;
+}
+
+
+.btn-ghost:hover,
+.btn-ghost:active {
+    border: solid 2px #fff;   
+    background-color: #fff;
+    color: rgb(75, 75, 75);
+}
+
+.btn-ghost--dark:link,
+.btn-ghost--dark:visited {
+    border: solid 1px #222;
+    color: #222;
+}
+
+
+.btn-ghost--dark:hover,
+.btn-ghost--dark:active { 
+    background-color: #000;
+    font-weight: 600;
+    color: #E3F2F3;
+}
+
+/* --------------------------------------------- */
+/* HEADER */
+/* --------------------------------------------- */
+
+.header-row {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.253), rgba(0, 0, 0, 0.3)), url(../../img/hero-tall.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  height: 90vh;
+  min-height: 81rem;
+  margin-top: 3%;
+  position: relative;
+}
+
+.logo {
+  color: #fff;
+  font-size: 4rem;
+  position: absolute;
+  top: 5rem;
+  left: 5rem;
+}
+
+.hero-text-box {
+  position: absolute;
+  color: #fff;
+  top: 20rem;
+  right: 7vw;
+  font-size: 4rem;
+  font-weight: 300;
+  display: inline-block;
+  text-align: right;
+}
+
+/* --------------------------------------------- */
+/* ABOUT */
+/* --------------------------------------------- */
+
+.about {
+  overflow: hidden;
+  background-color: #E3F2F3;
+  height: 80rem;
+  text-align: center;
+  position: relative;
+}
+
+.about__photo {
+  background-image: url(../../img/family.jpeg);
+  background-size: cover;
+  background-position: center;
+}
+
+.about__text {
+  position: absolute;
+  margin: 0 20%;
+  top: 50%;
+  transform: translateY(-50%);
+  /* left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.about__text h3 {
+  padding-bottom: 3rem;
+}
+
+.btn__about {
+  margin-top: 4rem;
+}
+
+
+/* --------------------------------------------- */
+/* SERVICE */
+/* --------------------------------------------- */
+
+
+.service-box {
+  height: 50rem;
+  display: table-cell;
+  vertical-align: middle;
+  overflow: hidden;
+}
+
+.service-box__bg-image {
+  background-position: top;
+  background-size: cover;
+  transition: all 0.2s;
+}
+
+.service-box__text-container {
+  position: absolute;
+  top: 0;
+  padding: 0 15%;
+  display: table;
+  font-weight: 400;
+  background-color: rgba(0, 0, 0, 0);
+  height: 50rem;
+  transition: .2s;
+}
+
+.service-box__text-container--cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.white-header--hidden {
+  background-color: #91ccd000;
+  color: #ffffff00;
+  display: inline-block;
+  margin-bottom: 1.5rem;
+}
+
+.white-paragraph-hidden {
+  color: #ffffff00;
+}
+
+/* ----- PERSONAL TRAINING ----- */
+
+.service-box__bg-image--private-training {
+  background-image: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, 0.3)), url(../../img/core-training.png);
+}
+
+/* ----- NUTRITION COACH ----- */
+
+.service-box__bg-image--nutrition-coach {
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5)), url(../../img/nutrition.png);
+}
+
+.p--white__nutrition-coach {
+  font-size: 1.6rem;
+}
+
+/* ----- DNA BASED ----- */
+
+.service-box__bg-image--dna-based {
+  background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, 0.5)), url(../../img/dumbell-rack.png);
+}
+
+
+
+
+
