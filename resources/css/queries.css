@@ -1,0 +1,186 @@
+/* Big tablet to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px) {
+
+}
+
+/* Small tablet to big tablet: 768px to 1023px */
+@media only screen and (max-width: 1023px) {
+    .main-nav li { margin-left: 1.6rem; }
+
+    .main-nav li a:link,
+    .main-nav li a:visited { font-size: 1.5rem;}
+}
+
+@media only screen and (min-width: 767px) {
+    .main-nav { 
+        display: block !important;
+    } 
+    .main-nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1040px) {
+
+    .about__text h3 {
+        font-size: 2.4rem;
+    }
+
+    .about__text p {
+        font-size: 1.4rem;
+    }
+}
+
+/* Small phones to small tablets: 481 to 767px */
+@media only screen and (max-width: 767px) {
+    .main-nav { 
+        display: none; 
+        margin-top: 0rem;
+        margin-left: 2rem;
+        background-color: #fff;
+        padding-right: 1.5rem;
+        padding-bottom: 1.5rem;
+        text-align: center;
+    }
+
+    .main-nav li { 
+        display: inline-block;
+    }
+
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        font-size: 1.8rem;
+        font-weight: 400;
+        color: #1a1a1a;
+    }
+
+    .main-nav li a:hover,
+    .main-nav li a:active {
+        background-color: #e1e1e1;
+}
+
+    .logo {
+        font-size: 3.0rem;
+    }
+
+    .main-nav li { display: block; }
+        
+    .mobile-nav-icon { display: inline-block }
+
+    h1 {
+        font-size: 4.5rem;
+        line-height: 7.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        line-height: 3.8rem;
+    }
+
+    .btn:link,
+    .btn:visited  {
+        height: 3rem;
+        width: 12rem;
+        font-size: 1.5rem;
+        padding-top: 0.8rem;
+    }
+
+    .header-row {
+        height: 70vh;
+    }
+
+    .about__photo {
+        display: none;
+      }
+
+    .about {
+        background-image: linear-gradient(rgba(121, 171, 175, 0.8), rgba(121, 171, 175, 0.8)),url(../../img/family.jpeg);
+        background-size: cover;
+        background-position: center;
+    }
+
+    .about__text p {
+        padding-bottom: 3rem;
+        color: #ffffff;
+      }
+
+    .about__text h3 {
+        font-size: 2.5rem;
+        color: #ffffff;
+    }
+
+    .about__text p {
+        font-size: 1.6rem;
+    }
+
+    .about__text {
+        margin-bottom: 0%;
+    }
+
+    .btn--small:link,
+    .btn--small:visited {
+        font-weight: 600;
+        transition: all 0.2s;
+        font-size: 1.4rem;
+        padding-top: 0.6rem;
+        height: 2.5rem;
+        width: 10rem;
+    }
+
+    .btn__about {
+        margin-top: 0rem;
+    }
+
+    .btn-ghost--dark:link,
+    .btn-ghost--dark:visited {
+        border: solid 1px rgb(255, 255, 255);
+        color: rgb(255, 255, 255);
+    }
+
+    .btn-ghost--dark:hover,
+    .btn-ghost--dark:active { 
+    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+    color: #000000;
+}
+
+.section-pricing {
+    margin-top: 3.5%;
+    padding: 2rem 0 2rem 0;
+  }
+
+.contact__text-container--cell {
+      position: relative;
+      top: .2rem;
+  }
+
+  h4 {
+      font-size: 1.7rem;
+  }
+
+  .p--white__nutrition-coach {
+    font-size: 1.6rem;   
+  }
+
+}
+
+/* Small phones: from 0 to 480px */
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 3.0rem;
+        line-height: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+    .header-row {
+        height: 90vh;
+    }
+    .p--white__nutrition-coach {
+        font-size: 1.2rem;   
+      }
+}
